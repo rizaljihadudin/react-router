@@ -6,6 +6,7 @@ import About from './components/About.jsx'
 import Customer from './components/Customer.jsx'
 import Seller from './components/Seller.jsx'
 import Product from './components/Product.jsx'
+import Data from './components/Data.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +16,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About />}/>
         {/* Nested Routes */}
         <Route path='/data'>
+          {/* Index Route */}
+          <Route index element={<Data />} />
           <Route path="customers" element={<Customer />}/>
           <Route path="sellers" element={<Seller />}/>
           <Route path="product" element={<Product />}/>
