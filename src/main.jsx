@@ -8,6 +8,7 @@ import Seller from './components/Seller.jsx'
 import Product from './components/Product.jsx'
 import Data from './components/Data.jsx'
 import DataLayout from './components/DataLayout.jsx'
+import ProductDetail from './components/ProductDetail.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="customers" element={<Customer />}/>
           <Route path="sellers" element={<Seller />}/>
           <Route path="product" element={<Product />}/>
+          <Route path="products/:id/:name" element={<ProductDetail />}/>
         </Route>
       </Routes>
     </BrowserRouter>
