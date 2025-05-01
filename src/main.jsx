@@ -11,6 +11,7 @@ import DataLayout from './components/DataLayout.jsx'
 import ProductDetail from './components/ProductDetail.jsx'
 import Image from './components/Image.jsx'
 import NotFound from './components/NotFound.jsx'
+import ProductSearch from './components/ProductSearch.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="products" element={<Product />}/>
           {/* Dynamic Nested Routes with Params */}
           <Route path="products/:id/:name" element={<ProductDetail />}/>
+          <Route path="products/search" element={<ProductSearch />}/>
         </Route>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
