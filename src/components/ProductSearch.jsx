@@ -3,6 +3,10 @@ import { useNavigate, useSearchParams } from "react-router"
 
 export default function ProductSearch(){
 
+
+    {/***
+        Berguna untuk mendapatkan query parameter dari URL    
+    */}
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
 
