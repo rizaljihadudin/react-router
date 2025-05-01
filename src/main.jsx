@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<Data />} />
           <Route path="customers" element={<Customer />}/>
           <Route path="sellers" element={<Seller />}/>
-          <Route path="product" element={<Product />}/>
+          <Route path="products" element={<Product />}/>
           {/* Dynamic Nested Routes with Params */}
           <Route path="products/:id/:name" element={<ProductDetail />}/>
         </Route>
